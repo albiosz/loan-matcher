@@ -1,0 +1,9 @@
+# Data (personal data, see data/README.md)
+data/*
+!data/.gitkeep
+!data/README.md
+
+# Python / Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
