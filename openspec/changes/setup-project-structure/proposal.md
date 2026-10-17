@@ -18,21 +18,22 @@ The loan-matcher project (a Deep Learning course project predicting whether a lo
 - Add a short README to each folder explaining its purpose, plus a map in `docs/README.md` and an expanded top-level `README.md`.
 - Move the root `LeadConversionRecord` schema file into `docs/data/data-dictionary.md`, written in English (`Zielvariable` becomes "target variable").
 - Add a rule to `openspec/config.yaml` that all artifacts and docs are written in English.
+- Add `AGENTS.md` (short pointer to `openspec/specs/` and `openspec/changes/`) and `CLAUDE.md` (imports `AGENTS.md`) so agents follow the structure.
+- Capture the layout and conventions as the `project-layout` spec, so it stays the durable source of truth after archive.
 - PDFs and slides are committed to git (small files); the dataset is not.
 
 ## Capabilities
 
 ### New Capabilities
-<!-- None: this is repository organization and documentation, not system behavior. -->
+- `project-layout`: repository folder structure and conventions (notebooks, data, docs, language, index READMEs, agent entry point)
 
 ### Modified Capabilities
 <!-- None. -->
-
-This change sets `skip_specs: true` because it only introduces folder layout, documentation and tooling configuration; no spec-level behavior changes.
 
 ## Impact
 
 - New directories: `notebooks/`, `data/`, `docs/` (and subfolders).
 - Moved file: `LeadConversionRecord` becomes `docs/data/data-dictionary.md`.
-- Modified files: `README.md`, `openspec/config.yaml`, new `.gitignore` for `data/`.
+- New files: `AGENTS.md`, `CLAUDE.md`, `.gitignore`, new spec `openspec/specs/project-layout/` (after archive).
+- Modified files: `README.md`, `openspec/config.yaml`.
 - No code, APIs or dependencies affected.

@@ -40,6 +40,7 @@ docs/        README.md
 - **PDFs and slides committed.** Small files; keeps everything in one place and works offline.
 - **`LeadConversionRecord` becomes `docs/data/data-dictionary.md`**, translated to English, with columns for type and meaning left to fill in. The original root file is removed so there is one source of truth.
 - **English everywhere**, enforced for OpenSpec artifacts via a `context` entry in `openspec/config.yaml`.
+- **`AGENTS.md` is a thin pointer, `CLAUDE.md` imports it.** The layout and conventions live in the `project-layout` spec (`openspec/specs/`), so agent files only say where to look (`openspec/specs/` for structure, `openspec/changes/` for work in flight). Alternative: a full folder map in `AGENTS.md`, which duplicates the spec and drifts. `CLAUDE.md` is a one-line `@AGENTS.md` import so there is one agent file to maintain.
 - **Each folder gets a short README** stating its purpose, so the structure explains itself.
 
 ## Risks / Trade-offs

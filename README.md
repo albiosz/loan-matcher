@@ -12,6 +12,7 @@ The notebooks are the main result.
 | [data/](data/) | Datasets, not committed to git (see its README) |
 | [docs/](docs/) | Project brief, data dictionary, journal, decisions, presentations, references |
 | [openspec/](openspec/) | Planning artifacts for changes to this project |
+| [AGENTS.md](AGENTS.md) | Structure and conventions for AI agents (imported by `CLAUDE.md`) |
 
 Start with [docs/README.md](docs/README.md) for a map of the documentation.
 

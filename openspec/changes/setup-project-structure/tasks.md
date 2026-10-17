@@ -26,3 +26,9 @@
 ## 5. Integration check
 
 - [x] 5.1 Compare the final tree against the layout in design.md and verify there are no missing or extra top-level folders
+
+## 6. Agent entry point and spec alignment
+
+- [x] 6.1 Trim `AGENTS.md` to a short pointer to `openspec/specs/` (structure and conventions) and `openspec/changes/` (work in flight); verify it contains no duplicated folder table and links to both paths
+- [x] 6.2 Verify `CLAUDE.md` contains the `@AGENTS.md` import and `README.md` links to `AGENTS.md`
+- [x] 6.3 Check the repository against each requirement in `specs/project-layout/spec.md` and verify `openspec validate setup-project-structure` passes
