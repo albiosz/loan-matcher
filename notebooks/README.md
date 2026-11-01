@@ -7,6 +7,7 @@ The notebooks are the main result of this project.
 - Files are numbered in run/reading order: `01_eda.ipynb`, `02_baseline.ipynb`, ...
 - Each notebook starts with a short goal and ends with a short conclusion.
 - Course examples live in [`examples/`](examples/). Copy one to a numbered notebook before modifying it.
+- Python packages used so far: `pandas`, `numpy`, `matplotlib`, `scipy`. There is no environment file yet; install them into `.venv` with `pip`.
 
 ## Stripping outputs (nbstripout)
 
@@ -41,3 +42,4 @@ The filter command points at the Python interpreter that was active during `--in
 | Notebook | Purpose |
 |---|---|
 | [`01_synthetic_data.ipynb`](01_synthetic_data.ipynb) | Simulates leads with the data dictionary's schema and writes `data/synthetic_leads.csv`; stand-in until real data is available |
+| [`02_eda.ipynb`](02_eda.ipynb) | Explores a lead dataset (applicants, employment, income, loan, timing, conversion); set `COMPARE_PATH` to compare a second dataset, such as the real export, with verdicts per column |
