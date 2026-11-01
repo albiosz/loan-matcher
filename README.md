@@ -16,6 +16,10 @@ The notebooks are the main result.
 
 Start with [docs/README.md](docs/README.md) for a map of the documentation.
 
+## Setup
+
+After cloning, install the notebook output filter once: see [Stripping outputs](notebooks/README.md#stripping-outputs-nbstripout).
+
 ## Language
 
 All code, documents and notes are written in English.
