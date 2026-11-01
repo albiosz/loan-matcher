@@ -10,7 +10,7 @@ Fields: 25. Type and meaning columns are to be filled in once the dataset is ava
 | `deducted_within_30_days` | Target | | **Target variable** (to predict) |
 | `loan_amount` | Loan | |  |
 | `loan_duration` | Loan | |  |
-| `loan_purpose` | Loan | |  |
+| `loan_purpose` | Loan | categorical | What the loan is for. One of the values listed under [Loan purposes](#loan-purposes). |
 | `two_applicants` | Applicants | |  |
 | `relationship_between_applicants` | Applicants | |  |
 | `age` | Applicants | |  |
@@ -30,3 +30,18 @@ Fields: 25. Type and meaning columns are to be filled in once the dataset is ava
 | `mini_job` | Employment and residence | |  |
 | `in_probation` | Employment and residence | |  |
 | `residence_duration` | Employment and residence | |  |
+
+## Loan purposes
+
+Values of `loan_purpose` (stored in the data as the snake_case code):
+
+- `new_car`: new car
+- `used_car`: used car
+- `motorbike`: motorbike
+- `furniture`: furniture
+- `electronics`: electronics
+- `modernization`: modernization (home renovation)
+- `journey`: journey
+- `debt_conversion`: debt conversion (replacing existing debt with a new loan)
+- `dispo`: overdraft facility (replacing the account overdraft)
+- `other`: other purpose
